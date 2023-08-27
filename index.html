@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DentDiagnosisGPT</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+body {
+      font-family: Arial, sans-serif;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  height: 100px;
+  width: auto;
+}
+
+.header-menu {
+  float: right;
+  list-style-type: none;
+}
+
+.header-menu li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.header-menu a {
+  color: #222;
+  text-decoration: none;
+}
+
+.header-menu a:hover {
+  color: #666;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">
+	    <img src="DentDiagnosisGPT.png" alt="DentDiagnosisGPT Logo" class="logo">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#faq">FAQ</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about">About</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+</header>
+
+<!-- Main Content -->
+<main class="container py-5">
+<div id="customgpt_chat"></div>
+<script src="https://cdn.customgpt.ai/js/embed.js" div_id="customgpt_chat" p_id="10133" p_key="8814ee48b1bbae9f19a2fe653c4befa0" width="100%" reset_conversation="1" height="700px"></script>
+</main>
+
+<!-- About Page -->
+<section id="about" class="bg-light py-5">
+	<div class="container">
+		<h2 class="text-center mb-5">About DentDiagnosisGPT</h2>
+		<div class="row">
+			<div class="col-md-6 mb-4">
+				<p>DentDiagnosisGPT was developed by <a href="https://www.linkedin.com/in/aldendorosario/" target="_blank">Alden Do Rosario</a> using <a href="https://customgpt.ai/" target="_blank">CustomGPT</a>, a ChatGPT-powered platform that lets businesses build chatbots with their own data. It has been trained on research articles and top medical information on the diagnosis of Dent's disease.</p>
+				<p><strong>Disclaimer</strong>: This tool is intended for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always seek the advice of a healthcare professional for any health concerns. While we strive to provide accurate information, we make no guarantees about the accuracy or completeness of any suggestions or information provided by this tool. Do not ignore professional medical advice or delay seeking treatment because of something you have read or interpreted through this tool. If you are experiencing a medical emergency, call your doctor or your local emergency service immediately.</p>
+			
+			</div>
+			<div class="col-md-6">
+				<ul class="list-group">
+					<li class="list-group-item"><strong>Developed by:</strong> Alden Do Rosario</li>
+					<li class="list-group-item"><strong>Training Model:</strong> CustomGPT + ChatGPT</li>
+					<li class="list-group-item"><strong>Training Data:</strong>277 research papers + 224 webpages </li>
+                    <li class="list-group-item"><strong>Email:</strong> adorosario [at] gmail [dot] com</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="faq">
+   <div class="container">
+      <h2 class="text-center">Frequently Asked Questions</h2>
+      <div class="row">
+         <div class="col-lg-12">
+            <div class="accordion" id="faqAccordion">
+               <!-- Question 1 -->
+               <div class="card">
+                  <div class="card-header" id="headingOne">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is DentDiagnosisGPT?
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                     <div class="card-body">
+			<p>DentDiagnosisGPT is an AI chatbot that uses CustomGPT + ChatGPT technology to answer questions about the diagnosis of Dent's disease. It is trained on 277 research papers about Dent's plus 224 top webpages related to the diagnosis of Dent's diseases. </p>
+				
+			<p><strong>Disclaimer</strong>: This tool is intended for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always seek the advice of a healthcare professional for any health concerns. While we strive to provide accurate information, we make no guarantees about the accuracy or completeness of any suggestions or information provided by this tool. Do not ignore professional medical advice or delay seeking treatment because of something you have read or interpreted through this tool. If you are experiencing a medical emergency, call your doctor or your local emergency service immediately.</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Question 2 -->
+               <div class="card">
+                  <div class="card-header" id="headingTwo">
+                     <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        I have more questions. Who should I contact?
+                        </button>
+                     </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                     <div class="card-body">
+			     Please contact the <a href="https://www.dentdisease.org/" target="_blank">Dent's Disease Foundation</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+	<!-- Footer -->
+	<footer class="bg-dark text-light py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-center text-md-left">
+					<p>&copy; 2023 DentDiagnosisGPT. All Rights Reserved.</p>
+				</div>
+				<div class="col-md-6 text-center text-md-right">
+					<a href="#" class="mr-3"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE5yOaqnKaEhVh1M6woXj" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
