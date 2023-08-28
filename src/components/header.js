@@ -13,12 +13,12 @@ const HEADER_NAV_ITEM = [
   },
   {
     label: "About",
-    url: "/#about",
+    url: "/about",
     isExternal: false,
   },
   {
     label: "FAQ",
-    url: "/#faq",
+    url: "/faq",
     isExternal: false,
   },
 ];
@@ -41,13 +41,16 @@ const Header = () => {
       <HeaderWrapper>
 
         <HeaderTitle>
-          <img src={"./DentDiagnosisGPT.png"} style={{
+          <a href="/">
+          <img src={"./DentsGPT.png"} style={{
             "font-size": "2rem",
             "font-weight": "bold",
             height: "100px",
             width: "auto",
           }}>
           </img>
+          </a>
+          
           {/* <Link to="/">{site.siteMetadata.title}</Link> */}
         </HeaderTitle>
 

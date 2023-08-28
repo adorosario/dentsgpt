@@ -64,13 +64,14 @@ const AccordionContainer = styled.div`
     margin-top: 3vh;
   border: 1px solid #ccc;
   border-radius: 8px;
+  width: 100%;
 `;
 
 const AccordionSection = styled.div`
   border-top: 1px solid #ccc;
   padding: 16px;
   cursor: pointer;
-  background-color: ${props => (props.active ? '#FFC0CB' : 'transparent')};
+//   background-color: ${props => (props.active ? '#FFC0CB' : 'transparent')};
 `;
 
 const AccordionContent = styled.div`
@@ -84,7 +85,7 @@ const CardContainer = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 16px;
   margin: 8px;
-  background-color:#D3D3D3;
+//   background-color:#D3D3D3;
   div{
     margin-bottom: 8px;
     }

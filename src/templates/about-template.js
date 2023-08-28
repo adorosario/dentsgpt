@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import styled from "styled-components";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import About from '../components/about';
 
 const AboutTemplate = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
@@ -11,9 +12,7 @@ const AboutTemplate = ({ data }) => {
   return (
     <Layout title={frontmatter.title}>
       <AboutWrapper>
-        <AboutImageWrapper image={profileImage} alt="" />
-
-        <AboutCopy dangerouslySetInnerHTML={{ __html: html }} />
+        <About></About>
       </AboutWrapper>
     </Layout>
   );
