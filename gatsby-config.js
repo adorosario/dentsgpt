@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Glass`,
+    title: `DentDiagnosisGPT`,
     author: {
-      name: `Yinka Adedire`,
+      name: `Alden Do Rosario`,
       summary: `Self-taught front-end web dev. JAMStack.`,
     },
     openGraphImage: `open-graph-image.png`,
-    description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
+    description: `DentDiagnosisGPT is an AI chatbot that uses CustomGPT + ChatGPT technology to answer questions about the diagnosis of Dent's disease. It is trained on 277 research papers about Dent's plus 224 top webpages related to the diagnosis of Dent's diseases.`,
     siteUrl: `https://gatsbyglass.netlify.app`,
     social: {
       twitter: `yinkakun`,
@@ -164,5 +164,21 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+
+    {
+
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+
+        src: 'https://cdn.customgpt.ai/js/embed.js',
+
+        div_id:"customgpt_chat",
+        p_id:"10133",
+        p_key:"8814ee48b1bbae9f19a2fe653c4befa0",
+        width:"100%",
+        reset_conversation:"1",
+        height:"700px"
+      },
+    },
   ],
 };

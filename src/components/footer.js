@@ -10,8 +10,9 @@ const Footer = () => {
         <SocialLinks />
 
         <FooterAttribution>
-          Hand-crafted with love by{' '}
-          <a href="https://twitter.com/yinkakun">Yinka Adedire</a>
+      
+          <p>&copy; 2023 DentDiagnosisGPT. All Rights Reserved.</p>
+              
         </FooterAttribution>
       </FooterWrapper>
     </StyledFooter>

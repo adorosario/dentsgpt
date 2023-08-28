@@ -13,12 +13,12 @@ const HEADER_NAV_ITEM = [
   },
   {
     label: "About",
-    url: "/about",
+    url: "/#about",
     isExternal: false,
   },
   {
-    label: "Contact",
-    url: "/contact",
+    label: "FAQ",
+    url: "/#faq",
     isExternal: false,
   },
 ];
@@ -39,8 +39,16 @@ const Header = () => {
   return (
     <StyledHeader>
       <HeaderWrapper>
+
         <HeaderTitle>
-          <Link to="/">{site.siteMetadata.title}</Link>
+          <img src="/DentDiagnosisGPT.png" style={{
+            "font-size": "2rem",
+            "font-weight": "bold",
+            height: "100px",
+            width: "auto",
+          }}>
+          </img>
+          {/* <Link to="/">{site.siteMetadata.title}</Link> */}
         </HeaderTitle>
 
         <HeaderNavList>
@@ -48,6 +56,9 @@ const Header = () => {
             if (item.isExternal) {
               return (
                 <HeaderNavListItem key={index}>
+
+
+
                   <a href={item.url} target="_blank" rel="noopener noreferrer">
                     {item.label}
                   </a>
@@ -61,9 +72,9 @@ const Header = () => {
               </HeaderNavListItem>
             );
           })}
-          <HeaderNavListItem>
+          {/* <HeaderNavListItem>
             <ThemeSwitch />
-          </HeaderNavListItem>
+          </HeaderNavListItem> */}
         </HeaderNavList>
       </HeaderWrapper>
     </StyledHeader>
@@ -96,10 +107,10 @@ const HeaderWrapper = styled(Container)`
 
 const HeaderTitle = styled.div`
   & a {
-    text-transform: uppercase;
     text-decoration: none;
     font-size: var(--size-400);
     color: inherit;
+    text-align: center;
   }
 `;
 
@@ -140,4 +151,11 @@ const StyledNavListItem = styled.li`
       font-size: 0.7rem;
     }
   }
+`;
+const Logo = styled.div`
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  height: 100px;
+  width: auto;
 `;

@@ -4,6 +4,9 @@ import Layout from '../components/layout';
 import PostList from '../components/post-list';
 import styled from 'styled-components';
 import StyledLink from '../components/styled-link';
+import About from '../components/about';
+import FAQComponent from '../components/faq';
+import { Helmet } from 'react-helmet';
 
 const HomePage = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
@@ -12,13 +15,24 @@ const HomePage = ({ data }) => {
 
   return (
     <Layout title={title}>
+      <Helmet>
+        <script src="https://cdn.customgpt.ai/js/embed.js" div_id="customgpt_chat" p_id="10133" p_key="8814ee48b1bbae9f19a2fe653c4befa0" width="100%" reset_conversation="1" height="700px"></script>
+      </Helmet>
       <Intro
         dangerouslySetInnerHTML={{
           __html: intro,
         }}
       />
 
+      <div id="customgpt_chat"></div>
+      <About />
+
+      <FAQComponent />
+      <h2 style={{ textAlign: "center", marginTop: "5vh" }}>
+        Posts
+      </h2>
       <PostList posts={posts} />
+
       <StyledLink
         css={`
           display: block;
