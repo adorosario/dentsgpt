@@ -41,7 +41,7 @@ const Header = () => {
       <HeaderWrapper>
 
         <HeaderTitle>
-          <img src="/DentDiagnosisGPT.png" style={{
+          <img src={"./DentDiagnosisGPT.png"} style={{
             "font-size": "2rem",
             "font-weight": "bold",
             height: "100px",
