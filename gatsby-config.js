@@ -165,20 +165,20 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
 
-    // {
+    {
 
-    //   resolve: 'gatsby-plugin-load-script',
-    //   options: {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
 
-    //     src: 'https://cdn.customgpt.ai/js/embed.js',
+        src: 'https://cdn.customgpt.ai/js/embed.js',
 
-    //     div_id:"customgpt_chat",
-    //     p_id:"10133",
-    //     p_key:"8814ee48b1bbae9f19a2fe653c4befa0",
-    //     width:"100%",
-    //     reset_conversation:"1",
-    //     height:"700px"
-    //   },
-    // },
+        div_id:"customgpt_chat",
+        p_id:"10133",
+        p_key:"8814ee48b1bbae9f19a2fe653c4befa0",
+        width:"100%",
+        reset_conversation:"1",
+        height:"700px"
+      },
+    },
   ],
 };
