@@ -7,12 +7,18 @@ import StyledLink from '../components/styled-link';
 import About from '../components/about';
 import FAQComponent from '../components/faq';
 import { Helmet } from 'react-helmet';
+import { useScript } from "@uidotdev/usehooks";
 
 const HomePage = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
   const intro = data.markdownRemark.html;
   const title = data.markdownRemark.frontmatter.title;
-
+  const status = useScript(
+    "https://cdn.customgpt.ai/js/embed.js",
+    {
+      removeOnUnmount: false,
+    },
+  );
   return (
     <Layout title={title}>
       <Helmet>
