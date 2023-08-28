@@ -72,9 +72,9 @@ const Header = () => {
               </HeaderNavListItem>
             );
           })}
-          {/* <HeaderNavListItem>
+          <HeaderNavListItem>
             <ThemeSwitch />
-          </HeaderNavListItem> */}
+          </HeaderNavListItem>
         </HeaderNavList>
       </HeaderWrapper>
     </StyledHeader>
