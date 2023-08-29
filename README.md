@@ -1,10 +1,10 @@
-# Gatsby Starter Glass
+# DentsGPT
 
-A Minimal & Beautiful Gatsby Personal Blog Starter With Nice Glassmorphism UI.
+Revolutionizing Dent's Disease Awareness - One Chat At A Time.
 
-[View Live Demo](https://gatsbyglass.netlify.app)
+[View Live](https://dentsgpt.com)
 
-![demo site screenshot](./screenshot.png)
+![site screenshot](./screenshot.png)
 
 ## Features
 
