@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-glass",
+  "name": "DentsGPT",
   "private": true,
-  "description": "A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.",
+  "description": "Revolutionizing Dent's Disease Awareness - One Chat At A Time",
   "version": "1.0.0",
-  "author": "Yinka Adedire <yinkakun@gmail.com>",
+  "author": "Alden Do Rosario",
   "dependencies": {
     "@uidotdev/usehooks": "^2.1.1",
     "babel-plugin-styled-components": "^2.0.7",
