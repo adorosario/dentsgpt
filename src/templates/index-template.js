@@ -19,6 +19,7 @@ const HomePage = ({ data }) => {
   );
   return (
     <Layout title={title}>
+      <div id="customgpt_chat"></div>
       <Helmet>
         <script async="true" src="https://cdn.customgpt.ai/js/embed.js" div_id="customgpt_chat" p_id="10133" p_key="8814ee48b1bbae9f19a2fe653c4befa0" width="100%" reset_conversation="1" height="700px"></script>
       </Helmet>
@@ -27,8 +28,12 @@ const HomePage = ({ data }) => {
           __html: intro,
         }}
       />
-
-      <div id="customgpt_chat"></div>
+      
+      <div style={{ textAlign: "left", marginTop: "5vh", marginLeft: "10vw" }}>
+        <p>
+          Disclaimer: This tool is intended for informational purposes only and does not constitute medical advice, diagnosis, or treatment. Always seek the advice of a healthcare professional for any health concerns. While we strive to provide accurate information, we make no guarantees about the accuracy or completeness of any suggestions or information provided by this tool. Do not ignore professional medical advice or delay seeking treatment because of something you have read or interpreted through this tool. If you are experiencing a medical emergency, call your doctor or your local emergency service immediately.
+        </p>
+      </div>
  
       <h2 style={{ textAlign: "center", marginTop: "5vh" }}>
         Posts
