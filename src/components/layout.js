@@ -1,36 +1,40 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React, { Fragment } from "react";
+import Seo from "./seo";
+import Header from "./header";
+import Footer from "./footer";
+import Container from "./container";
+import GlobalStyle from "./global-styles";
+import styled from "styled-components";
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
-  let header
+const Layout = ({ children, title, description, socialImage = "" }) => {
+  return (
+    <Fragment>
+      <GlobalStyle />
+      <Seo title={title} description={description} socialImage={socialImage} />
+      <LayoutWrapper>
+        <Header />
+        <main>
+          <Container>{children}</Container>
+        </main>
+        <Footer />
+      </LayoutWrapper>
+    </Fragment>
+  );
+};
 
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
+export default Layout;
+
+const LayoutWrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  & main {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
-  return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
-    </div>
-  )
-}
-
-export default Layout
+  & footer {
+    margin-top: auto;
+  }
+`;
