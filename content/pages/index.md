@@ -1,7 +1,5 @@
 ---
-template: "index-template"
-title: "Gatsby Starter Glass"
+title: DenstGPT - AI Chat For Dent's Disease
+template: index-template
 ---
-
-# DentDiagnosisGPT
-
+# Revolutionizing Dent's Disease Awareness - One Chat At A Time
